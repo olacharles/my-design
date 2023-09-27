@@ -1,0 +1,113 @@
+body {
+    background-color: hsl(30, 38%, 92%);
+}
+
+.poster {
+    max-width: 1440px; 
+    margin: 20px auto;
+    background-color: hsl(0, 5%, 96%);
+    border-radius: 30px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(20, 20, 20, 0.1);
+    display: flex;
+    align-items: center;
+}
+
+.left-container {
+    flex: 1;
+    position: relative; /* Make it relative to position the background */
+}
+
+/* Styles for the image */
+img {
+    width: 700px;
+    height: 200px;
+    border-radius: 35px; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
+}
+
+
+
+.right-container {
+    flex: 1; /* Take up remaining space */
+    font-size: 32px;
+    padding-right: 20px; /* Add some spacing between containers */
+    align-content: center;
+    justify-content: center;
+}
+
+
+.poster h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px; 
+    color: hsl(228, 12%, 48%);
+    font-weight: 200;
+}
+
+.poster h2 {
+    font-size: 70px;
+    font-weight: 700;
+}
+
+.price {
+    font-size: 80px; /* font size for the first price */
+    color: hsl(158, 36%, 37%); /*  color for the first price */
+}
+
+.old-price {
+    font-size: 40px; /* font size for the second price */
+    color: hsl(180, 2%, 49%); 
+    text-decoration: line-through; 
+}
+
+.poster p {
+    font-size: 40px; /* font size */
+    line-height: 1.5;
+    color: hsl(228, 12%, 48%);
+}
+
+.poster img {
+    display: block;
+    max-width: 100%;
+    height: fit-content; 
+}
+
+.add-to-cart button {
+    background-color: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    border: none;
+    width: 600px;
+    height: 100px;
+    border-radius: 15px;
+    padding: 10px 20px;
+    font-size: 40px;
+    cursor: pointer;
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+}
+
+.add-to-cart img {
+    width: 40px; 
+    height: 40px;
+    margin-right: 10px; 
+}
+
+.add-to-cart:hover span{
+    width: 100%;
+}
+button:hover{
+    background-color: hsl(158, 45%, 17%);
+}
+
+
+/* Media Query for Desktop */
+@media (min-width: 375px) {
+    .poster {
+        max-width:  1440px; /* Desktop width */
+    }
+
+    .poster h1 {
+        font-size: 36px; /* Adjust for desktop */
+    }
+}
